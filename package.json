@@ -1,0 +1,61 @@
+{
+  "dependencies": {
+    "@hookform/resolvers": "^4.1.1",
+    "bootstrap": "^5.3.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.475.0",
+    "next": "15.1.7",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "react-icons": "^5.5.0",
+    "react-toastify": "^11.0.3",
+    "store2": "^2.14.4",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss-animate": "^1.0.7",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@eslint/eslintrc": "^3",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.4.3",
+    "postcss": "^8",
+    "prettier": "^3.5.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx}": "eslint --fix",
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "name": "my-resume",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
+    "dev": "next dev --turbopack",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write --list-different .",
+    "lint": "next lint",
+    "lint-staged": "lint-staged",
+    "lint:js": "next lint",
+    "lint:css": "stylelint \"**/*.scss\"",
+    "type-check": "tsc --pretty --noEmit",
+    "prepare": "husky && husky install",
+    "start": "next start,",
+    "check-all": "npm run type-check && npm run lint:js && npm run lint:css && npm run format && npm test:ci"
+  },
+  "version": "0.1.0"
+}
