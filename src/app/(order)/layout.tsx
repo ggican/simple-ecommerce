@@ -30,7 +30,6 @@ export const metadata: Metadata = {
 
 type RootLayoutProps = {
   children: React.ReactNode;
-  params: Record<string, string>;
 };
 
 function RootLayout({ children }: RootLayoutProps) {
