@@ -3,16 +3,7 @@
 import { useCart } from '@import/context/useCart';
 
 import { Suspense, useEffect, useState } from 'react';
-import {
-  Button,
-  Col,
-  Container,
-  Form,
-  Navbar,
-  NavbarCollapse,
-  NavbarToggle,
-  Row,
-} from 'react-bootstrap';
+import { Button, Col, Container, Form, Navbar, Row } from 'react-bootstrap';
 import { FaHeart, FaShoppingCart } from 'react-icons/fa';
 
 import Link from 'next/link';
